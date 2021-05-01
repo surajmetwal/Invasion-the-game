@@ -4,8 +4,8 @@ class Settings:
     def __init__(self):
         """Initialize the game's static settings."""
         # Screen settings
-        self.screen_width = 1300
-        self.screen_height = 720
+        self.screen_width = 1366
+        self.screen_height = 768
         self.bg_color = (230, 230, 230)
 
         # Ship settings
@@ -21,7 +21,7 @@ class Settings:
 
         # Alien settings
         # self.alien_speed_factor = 1
-        self.fleet_drop_speed = 50
+        self.fleet_drop_speed = 20
 
         # How quickly the game speeds up
         self.speedup_scale = 1.2
@@ -33,9 +33,9 @@ class Settings:
 
     def initialize_dynamic_settings(self):
         """Initialize settings that change throughout the game."""
-        self.ship_speed_factor = 5
+        self.ship_speed_factor = 3
         self.bullet_speed_factor = 10
-        self.alien_speed_factor = 1.3
+        self.alien_speed_factor = 0.5
 
         # fleet_direction of 1 represents right; -1 represents left.
         self.fleet_direction = -1
